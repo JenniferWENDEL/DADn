@@ -1,13 +1,8 @@
-# DAD'n — Site vitrine
+# DAD'N
 
-Site statique prêt à publier sur GitHub Pages.
+Site vitrine officiel de DAD'N.
 
-## Publication
-1. Crée un dépôt GitHub.
-2. Ajoute `index.html`, `styles.css` et `script.js` à la racine.
-3. Va dans **Settings → Pages**.
-4. Choisis **Deploy from a branch**.
-5. Sélectionne `main` puis `/root`.
-6. Enregistre.
+## Mise en ligne avec GitHub Pages
+Les fichiers `index.html`, `style.css` et `script.js` doivent rester ensemble à la racine du dépôt.
 
-Adresse e-mail affichée : `info@dadn.com`
+Contact : info@dadn.fr

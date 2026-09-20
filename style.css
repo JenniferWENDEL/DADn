@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap');
+
+:root{--ink:#11110f;--paper:#eee9df;--muted:#6d6a63;--line:rgba(17,17,15,.18)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:"DM Sans",Arial,sans-serif}
+a{color:inherit}
+.header{height:90px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:relative;z-index:5}
+.brand{font-family:"Manrope",sans-serif;font-weight:700;font-size:1.45rem;letter-spacing:-.04em;text-decoration:none}
+nav{display:flex;gap:2rem}
+nav a{text-decoration:none;font-size:.8rem;text-transform:uppercase;letter-spacing:.08em}
+main{overflow:hidden}
+.hero{min-height:calc(100vh - 90px);padding:8vh 5vw 7vh;display:flex;flex-direction:column;justify-content:center}
+.hero-tag,.section-label{font-size:.7rem;letter-spacing:.15em;font-weight:600}
+.hero h1{font-family:"Manrope",sans-serif;font-size:clamp(4rem,10.5vw,10rem);line-height:.82;letter-spacing:-.075em;margin:4vh 0}
+.hero h1 span{font-weight:400;color:var(--muted)}
+.hero-copy{max-width:600px;font-size:clamp(1rem,1.5vw,1.25rem);line-height:1.55;margin-left:auto}
+.cta{margin-top:3rem;margin-left:auto;text-decoration:none;border-bottom:1px solid var(--ink);padding-bottom:.4rem;font-size:.9rem}
+.cta span{margin-left:1rem}
+.statement,.work,.contact{padding:10vw 5vw;border-top:1px solid var(--line)}
+.statement{display:grid;grid-template-columns:1fr 2fr;gap:4rem}
+.statement h2,.work>h2,.contact h2{font-family:"Manrope",sans-serif;font-size:clamp(3rem,7vw,7rem);line-height:.9;letter-spacing:-.065em;font-weight:500}
+.statement p{max-width:640px;margin-top:3rem;font-size:1.1rem;line-height:1.7;color:var(--muted)}
+.work>h2{margin:3rem 0 5rem}
+.cards{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.cards article{min-height:330px;padding:2rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;flex-direction:column}
+.cards article>span{font-size:.7rem;color:var(--muted)}
+.cards h3{font-family:"Manrope",sans-serif;font-size:2rem;margin-top:auto;margin-bottom:1rem}
+.cards p{max-width:430px;color:var(--muted);line-height:1.6}
+.manifesto{padding:4rem 5vw;border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-family:"Manrope",sans-serif;font-size:clamp(1.2rem,3vw,3rem);font-weight:600}
+.manifesto i{font-style:normal;color:var(--muted)}
+.contact h2{margin:3rem 0 5rem}
+.contact>a{font-family:"Manrope",sans-serif;font-size:clamp(1.7rem,4.5vw,5rem);text-decoration:none;border-bottom:2px solid var(--ink);display:inline-flex;gap:1rem}
+footer{padding:2rem 5vw;display:flex;justify-content:space-between;gap:2rem;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(max-width:720px){
+ .header{height:72px}.header nav{gap:.8rem}.header nav a{font-size:.64rem}
+ .hero{min-height:calc(100vh - 72px);padding-top:4rem}.hero h1{font-size:17vw}
+ .hero-copy,.cta{margin-left:0}.hero-copy{margin-top:1rem}
+ .statement{grid-template-columns:1fr;gap:3rem;padding-top:5rem;padding-bottom:5rem}
+ .cards{grid-template-columns:1fr}.cards article{min-height:260px}
+ .manifesto{gap:.7rem;overflow:hidden;padding-left:5vw;padding-right:5vw}
+ .contact{padding-top:5rem;padding-bottom:5rem}
+ footer{flex-direction:column}
+}
